@@ -79,3 +79,114 @@ body {
 .nav-icon div:hover {
     cursor: pointer;
 }
+
+
+
+.customer-review{
+    
+    padding: 20px;
+    gap: 40px;
+    display: flex;
+    justify-content: center;
+    
+}
+.review{
+    background-color:  #440e4d;
+    color: white;
+    gap: 30px;
+   padding-left: 20px;
+   padding-top: 10px;
+   padding-bottom: 5px;
+   width: 30%;
+   height: 150px;
+   
+}
+.review-title{
+    font-size: 24px;
+    font-weight: bold;
+    margin-left: 20px;
+}
+.review h2{
+    color: gold;
+    margin-top: 10px;
+    font-size: 20px;
+}
+.review p{
+    font-size: 18px;
+}
+.footer-title{
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+}
+.footer-maincontainer{
+    width: 100%;
+    margin-top: 20px;
+    padding: 10px;
+}
+.footer1{
+  background-color: gainsboro;
+  color: black;
+  padding: 20px;
+}
+.footer h1{
+  text-align: center;
+}
+.footer2{
+  background-color: black;
+  color: white;
+  display: flex;
+  padding: 20px;
+  gap: 80px;
+
+}
+
+.left2{
+  margin-left: 20px;
+}
+.left2 h1{
+    margin-bottom: 20px;
+}
+.left1 h1{
+    margin-bottom: 20px;
+}
+.left1 p{
+    margin-bottom: 10px;
+}
+.left2 p{
+    margin-bottom: 10px;
+}
+.left2 h1{
+  margin-right: 50px;
+}
+.left1,.left2,.left3 h1{
+  font-size: 20px;
+  
+  
+  
+}
+.left1,.left2,.left3 p{
+  font-size: 16px;
+ 
+  padding-top: 20px;
+}
+.left3 h1{
+  padding-top: 20px;
+}
+.icons{
+  display: flex;
+  width: 50px;
+  height: 50px;
+  gap: 10px;
+  margin-top: 10px;
+}
+.footerbottom{
+  display: flex;
+
+}
+.footerbottom h1{
+  text-align: center;
+}
+.banner1{
+  width: 200%;
+}
