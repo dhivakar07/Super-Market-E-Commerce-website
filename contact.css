@@ -5,6 +5,7 @@
 
 body {
     font-family: "Roboto Condensed", sans-serif;
+    font-display: swap;
 }
 
 .navbar {
@@ -13,6 +14,9 @@ body {
     justify-content: space-between;
     background-color: #2ae65c;
     padding: 20px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
 }
 
 .nav-title {
@@ -36,33 +40,40 @@ body {
     font-size: medium;
 }
 
-.nav_menu-items li {
-    font-size: large;
-    font-weight: 500;
-}
-
-.nav_menu-items li:hover {
-    cursor: pointer;
-    font-weight: 700;
-    transition: 0.5ms;
-}
-
 .search-box {
     outline: none;
     font-size: small;
     width: 100%;
 }
 
-.nav_menu-items {
+.nav_category {
     display: flex;
     flex-direction: row;
     gap: 20px;
     text-decoration: none;
 }
 
+.nav_category li {
+    font-size: large;
+    font-weight: 500;
+}
+
+
+.nav_category li:hover {
+    cursor: pointer;
+    font-weight: 700;
+    transition: font-weight 0.5ms;
+}
+
+
 .nav-icon {
     display: flex;
     gap: 10px;
+}
+
+.nav-icon svg {
+    width: 30px;
+    height: 30px;
 }
 
 .nav-icon div:hover {
