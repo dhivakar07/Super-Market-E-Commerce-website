@@ -17,6 +17,7 @@ body {
     position: sticky;
     top: 0;
     z-index: 100;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
 }
 
 .nav-title {
@@ -81,112 +82,127 @@ body {
 }
 
 
-
-.customer-review{
-    
+.customer-review {
     padding: 20px;
-    gap: 40px;
-    display: flex;
-    justify-content: center;
-    
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+
 }
-.review{
-    background-color:  #440e4d;
-    color: white;
+
+.review {
+    background-color: rgb(215, 212, 212);
+    color: black;
     gap: 30px;
-   padding-left: 20px;
-   padding-top: 10px;
-   padding-bottom: 5px;
-   width: 30%;
-   height: 150px;
-   
+    padding: 5px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
 }
-.review-title{
+
+.review-title {
     font-size: 24px;
     font-weight: bold;
     margin-left: 20px;
 }
-.review h2{
-    color: gold;
+
+.review h2 {
+    color: green;
     margin-top: 10px;
     font-size: 20px;
 }
-.review p{
+
+.review p {
     font-size: 18px;
 }
-.footer-title{
+
+.footer-title {
     text-align: center;
-    font-size: 22px;
+    font-size: 30px;
     font-weight: bold;
 }
-.footer-maincontainer{
+
+.footer-maincontainer {
     width: 100%;
     margin-top: 20px;
     padding: 10px;
 }
-.footer1{
-  background-color: gainsboro;
-  color: black;
-  padding: 20px;
+
+.footer1 {
+    background-color: #2ae65c;
+    color: black;
+    padding: 20px;
 }
-.footer h1{
-  text-align: center;
+
+.footer h1 {
+    text-align: center;
 }
-.footer2{
-  background-color: black;
-  color: white;
-  display: flex;
-  padding: 20px;
-  gap: 80px;
+
+.footer2 {
+    background-color: rgb(215, 212, 212);
+    color: black;
+    display: flex;
+    padding: 20px;
+    gap: 80px;
 
 }
 
-.left2{
-  margin-left: 20px;
+.left2 {
+    margin-left: 20px;
 }
-.left2 h1{
+
+.left2 h1 {
     margin-bottom: 20px;
 }
-.left1 h1{
+
+.left1 h1 {
     margin-bottom: 20px;
 }
-.left1 p{
-    margin-bottom: 10px;
-}
-.left2 p{
-    margin-bottom: 10px;
-}
-.left2 h1{
-  margin-right: 50px;
-}
-.left1,.left2,.left3 h1{
-  font-size: 20px;
-  
-  
-  
-}
-.left1,.left2,.left3 p{
-  font-size: 16px;
- 
-  padding-top: 20px;
-}
-.left3 h1{
-  padding-top: 20px;
-}
-.icons{
-  display: flex;
-  width: 50px;
-  height: 50px;
-  gap: 10px;
-  margin-top: 10px;
-}
-.footerbottom{
-  display: flex;
 
+.left1 p {
+    margin-bottom: 10px;
 }
-.footerbottom h1{
-  text-align: center;
+
+.left2 p {
+    margin-bottom: 10px;
 }
-.banner1{
-  width: 200%;
+
+.left2 h1 {
+    margin-right: 50px;
+}
+
+.left1,
+.left2,
+.left3 h1 {
+    font-size: 20px;
+}
+
+.left1,
+.left2,
+.left3 p {
+    font-size: 16px;
+    padding-top: 20px;
+}
+
+.left3 h1 {
+    padding-top: 20px;
+}
+
+.icons {
+    display: flex;
+    width: 50px;
+    height: 50px;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.footerbottom {
+    display: flex;
+}
+
+.footerbottom h1 {
+    text-align: center;
+}
+
+.banner1 {
+    width: 200%;
 }
