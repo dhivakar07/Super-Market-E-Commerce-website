@@ -77,7 +77,99 @@
     cursor: pointer;
 }
 
+/* Banner Section */
+    .banner {
+      height: 70vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      position: relative;
+      background: url('./images/Banner1.jpg') center/cover no-repeat;
+    }
 
+    /* Overlay for readability */
+    /* .banner::before {
+      content: "";
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0,0,0,0.4); 
+    } */
+
+    .banner-content {
+      position: relative;
+      background: rgba(50, 150, 50, 0.15);
+      padding: 40px;
+      border-radius: 15px;
+      color: #fff;
+      max-width: 600px;
+      animation: fadeIn 1.5s ease;
+    }
+
+    .banner-content h1 {
+      font-size: 3rem;
+      margin-bottom: 15px;
+    }
+
+    .banner-content p {
+      font-size: 1.2rem;
+      margin-bottom: 25px;
+      color: rgb(4, 53, 4);
+    }
+
+    .banner-content button {
+      background: linear-gradient(135deg, #ff6600, #ff9966);
+      border: none;
+      padding: 12px 30px;
+      font-size: 1rem;
+      color: #fff;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .banner-content button:hover {
+      transform: scale(1.1);
+      background: linear-gradient(135deg, #e65c00, #ff7f50);
+    }
+
+    /* Categories */
+    .categories {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 30px;
+      padding: 40px 20px;
+    }
+
+    .category {
+      background: #fff;
+      border-radius: 12px;
+      text-align: center;
+      padding: 20px;
+      color: #333;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      transition: 0.3s;
+    }
+
+    .category img {
+      width: 50px;
+      margin-bottom: 10px;
+    }
+
+    .category:hover {
+      transform: translateY(-8px);
+    }
+
+    /* Animation */
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /*banner section end*/
+
+/*customer review*/
 .customer-review {
     padding: 20px;
     display: grid;
