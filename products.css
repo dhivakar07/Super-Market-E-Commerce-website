@@ -78,6 +78,9 @@
 }
 
 /* Products Category */
+.product-page{
+    display: flex;
+}
 .category-container {
     display: flex;
     flex-direction: column;
