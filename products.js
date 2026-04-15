@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 document.addEventListener("DOMContentLoaded", () => {
   // Grab all category buttons
   const categories = document.querySelectorAll(".category");
