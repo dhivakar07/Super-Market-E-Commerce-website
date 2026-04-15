@@ -147,6 +147,9 @@
 .product_fruit-section {
     margin: 10px;
 }
+.product_vegetables-section{
+    margin: 10px;
+}
 
 .product-title {
     font-size: 30px;
@@ -156,7 +159,7 @@
 
 .product-list {
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(5, 1fr);
     gap: 20px;
 }
 
