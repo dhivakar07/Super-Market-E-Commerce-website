@@ -53,7 +53,7 @@
 .nav_category li {
     font-size: large;
     font-weight: 500;
-    transition: all 0.8s;
+    transition: all 1s;
 }
 
 
@@ -73,8 +73,13 @@
     height: 30px;
 }
 
+.nav-icon div {
+    transition: all 1s;
+}
+
 .nav-icon div:hover {
     cursor: pointer;
+    color: white;
 }
 
 /* Banner Section */
