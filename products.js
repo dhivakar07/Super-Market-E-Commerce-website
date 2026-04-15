@@ -38,7 +38,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 });
-=======
+// Cart sidebar functionality
 const closecart = document.querySelector(".close-card-icon");
 const cardsidenav = document.querySelector(".cart-sidenav");
 const carticon = document.querySelector(".cart-icon");
@@ -48,4 +48,4 @@ carticon.addEventListener("click", function () {
 closecart.addEventListener("click", function () {
   cardsidenav.style.right = "-40%";
 });
->>>>>>> 8b722679d972ab13c38e22afe3f4290216e66bda
+
