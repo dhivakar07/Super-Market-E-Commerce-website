@@ -53,13 +53,13 @@
 .nav_category li {
     font-size: large;
     font-weight: 500;
+    transition: all 1s;
 }
 
 
 .nav_category li:hover {
     cursor: pointer;
-    font-weight: 700;
-    transition: font-weight 0.5ms;
+    color: white;
 }
 
 
@@ -73,7 +73,38 @@
     height: 30px;
 }
 
+.nav-icon div {
+    transition: all 1s;
+}
+
 .nav-icon div:hover {
+    cursor: pointer;
+    color: white;
+}
+
+/* Cart Side Navbar */
+.cart-sidenav {
+    background-color: whitesmoke;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    z-index: 120;
+    width: 40%;
+    right: -40%;
+    transition: all 1s;
+}
+
+.close-cart {
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
+}
+
+.close-cart svg {
+    width: 28px;
+    height: 28px;
+    margin: 10px;
+}
+
+.close-cart svg:hover {
     cursor: pointer;
 }
 

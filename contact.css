@@ -52,13 +52,13 @@
 .nav_category li {
     font-size: large;
     font-weight: 500;
+    transition: all 1s;
 }
 
 
 .nav_category li:hover {
     cursor: pointer;
-    font-weight: 700;
-    transition: font-weight 0.5ms;
+    color: white;
 }
 
 
@@ -72,6 +72,11 @@
     height: 30px;
 }
 
+.nav-icon div {
+    transition: all 1s;
+}
+
 .nav-icon div:hover {
     cursor: pointer;
+    color: white;
 }

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 document.addEventListener("DOMContentLoaded", () => {
   // Grab all category buttons
   const categories = document.querySelectorAll(".category");
@@ -37,3 +38,14 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 });
+=======
+const closecart = document.querySelector(".close-card-icon");
+const cardsidenav = document.querySelector(".cart-sidenav");
+const carticon = document.querySelector(".cart-icon");
+carticon.addEventListener("click", function () {
+  cardsidenav.style.right = 0;
+});
+closecart.addEventListener("click", function () {
+  cardsidenav.style.right = "-40%";
+});
+>>>>>>> 8b722679d972ab13c38e22afe3f4290216e66bda
