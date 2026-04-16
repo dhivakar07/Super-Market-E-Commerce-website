@@ -8,7 +8,7 @@ const headlines = [
 let hIndex = 0;
 const headlineEl = document.getElementById("headline");
 
-<<<<<<< HEAD
+
       setInterval(() => {
         hIndex = (hIndex + 1) % headlines.length;
         headlineEl.textContent = headlines[hIndex];
@@ -19,13 +19,7 @@ const headlineEl = document.getElementById("headline");
     
 
 
-  document.addEventListener("DOMContentLoaded", function () {
-=======
-setInterval(() => {
-  hIndex = (hIndex + 1) % headlines.length;
-  headlineEl.textContent = headlines[hIndex];
-}, 4000);
->>>>>>> 3f4b23a6c9775cfd2cb25d42005ef037227be5e3
+  
 
 document.addEventListener("DOMContentLoaded", function () {
   const signupBtn = document.getElementById("signupBtn");
@@ -51,9 +45,9 @@ document.addEventListener("DOMContentLoaded", function () {
     popup.style.display = "none";
   });
 
-<<<<<<< HEAD
+ HEAD
   // Login
-=======
+
   // CLOSE WHEN CLICK OUTSIDE
   popup.addEventListener("click", function (e) {
     if (e.target === popup) {
@@ -71,7 +65,7 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   // LOGIN CHECK
->>>>>>> 3f4b23a6c9775cfd2cb25d42005ef037227be5e3
+
   loginBtn.addEventListener("click", function () {
     userError.textContent = "";
     passError.textContent = "";
