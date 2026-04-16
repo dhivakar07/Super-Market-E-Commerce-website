@@ -1,13 +1,14 @@
-  // Dynamic rotating headline
-      const headlines = [
-        "Healthy & Fresh Groceries",
-        "Delivered Right to Your Door",
-        "Save Big on Organic Produce",
-      "Freshness You Can Trust"
-     ];
-      let hIndex = 0;
-      const headlineEl = document.getElementById("headline");
+// Dynamic rotating headline
+const headlines = [
+  "Healthy & Fresh Groceries",
+  "Delivered Right to Your Door",
+  "Save Big on Organic Produce",
+  "Freshness You Can Trust",
+];
+let hIndex = 0;
+const headlineEl = document.getElementById("headline");
 
+<<<<<<< HEAD
       setInterval(() => {
         hIndex = (hIndex + 1) % headlines.length;
         headlineEl.textContent = headlines[hIndex];
@@ -19,7 +20,14 @@
 
 
   document.addEventListener("DOMContentLoaded", function () {
+=======
+setInterval(() => {
+  hIndex = (hIndex + 1) % headlines.length;
+  headlineEl.textContent = headlines[hIndex];
+}, 4000);
+>>>>>>> 3f4b23a6c9775cfd2cb25d42005ef037227be5e3
 
+document.addEventListener("DOMContentLoaded", function () {
   const signupBtn = document.getElementById("signupBtn");
   const popup = document.getElementById("loginPopup");
   const closeBtn = document.querySelector(".closeBtn");
@@ -43,9 +51,28 @@
     popup.style.display = "none";
   });
 
+<<<<<<< HEAD
   // Login
-  loginBtn.addEventListener("click", function () {
+=======
+  // CLOSE WHEN CLICK OUTSIDE
+  popup.addEventListener("click", function (e) {
+    if (e.target === popup) {
+      popup.style.display = "none";
+    }
+  });
 
+  // SHOW / HIDE PASSWORD
+  togglePassword.addEventListener("click", function () {
+    if ((password.type = password)) {
+      password.type = "text";
+    } else {
+      password.type = "password";
+    }
+  });
+
+  // LOGIN CHECK
+>>>>>>> 3f4b23a6c9775cfd2cb25d42005ef037227be5e3
+  loginBtn.addEventListener("click", function () {
     userError.textContent = "";
     passError.textContent = "";
 
@@ -70,7 +97,5 @@
         passError.textContent = "Wrong username or password ";
       }
     }
-
   });
-
 });
