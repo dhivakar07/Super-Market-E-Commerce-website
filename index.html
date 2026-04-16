@@ -56,10 +56,39 @@
               clip-rule="evenodd"
             />
           </svg>
-          <p>Login</p>
+          
+           <button id="signupBtn">Signup</button>
         </div>
       </div>
     </section>
+
+
+<!-- LOGIN POPUP -->
+<div id="loginPopup" class="popup">
+
+  <div class="popup-content">
+
+    <span class="closeBtn">&times;</span>
+
+    <h2>Login</h2>
+
+    <input type="text" id="username" placeholder="Enter Username">
+    <p id="userError" class="error"></p>
+
+    <div class="password-box">
+      <input type="password" id="password" placeholder="Enter Password">
+      <span id="togglePassword">👁️</span>
+    </div>
+
+    <p id="passError" class="error"></p>
+
+    <button id="loginBtn">Login</button>
+
+  </div>
+
+</div>
+
+
 
     <!-- Banner -->
     <section class="banner">
@@ -246,5 +275,8 @@
         </div>
       </div>
     </section>
+
+    <script src="index.js"></script>
+
   </body>
 </html>
