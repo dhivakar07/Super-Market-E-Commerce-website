@@ -8,18 +8,10 @@ const headlines = [
 let hIndex = 0;
 const headlineEl = document.getElementById("headline");
 
-
-      setInterval(() => {
-        hIndex = (hIndex + 1) % headlines.length;
-        headlineEl.textContent = headlines[hIndex];
-      }, 4000);
-
-
-   
-    
-
-
-  
+setInterval(() => {
+  hIndex = (hIndex + 1) % headlines.length;
+  headlineEl.textContent = headlines[hIndex];
+}, 4000);
 
 document.addEventListener("DOMContentLoaded", function () {
   const signupBtn = document.getElementById("signupBtn");
@@ -45,9 +37,6 @@ document.addEventListener("DOMContentLoaded", function () {
     popup.style.display = "none";
   });
 
- HEAD
-  // Login
-
   // CLOSE WHEN CLICK OUTSIDE
   popup.addEventListener("click", function (e) {
     if (e.target === popup) {
@@ -57,7 +46,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // SHOW / HIDE PASSWORD
   togglePassword.addEventListener("click", function () {
-    if ((password.type = password)) {
+    if (password.type === "password") {
       password.type = "text";
     } else {
       password.type = "password";
@@ -65,7 +54,6 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   // LOGIN CHECK
-
   loginBtn.addEventListener("click", function () {
     userError.textContent = "";
     passError.textContent = "";
@@ -84,11 +72,12 @@ document.addEventListener("DOMContentLoaded", function () {
 
     if (valid) {
       if (username.value === "Naveetha" && password.value === "123456") {
+        alert("Login Successfully");
         popup.style.display = "none";
         username.value = "";
         password.value = "";
       } else {
-        passError.textContent = "Wrong username or password ";
+        passError.textContent = "Wrong username or password";
       }
     }
   });
