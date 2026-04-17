@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 /* BUTTON */
 #signupBtn {
     cursor: pointer;
@@ -395,8 +396,8 @@
 
 .icons {
     display: flex;
-    width: 50px;
-    height: 50px;
+    width: 30px;
+    height: 30px;
     gap: 10px;
     margin-top: 10px;
 }

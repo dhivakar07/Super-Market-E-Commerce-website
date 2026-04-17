@@ -80,3 +80,417 @@
     cursor: pointer;
     color: white;
 }
+
+.menuicon {
+    display: none;
+}
+
+/* Side-Navbar */
+.sidenavbar {
+    width: 40%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: lightgrey;
+    z-index: 101;
+    right: -40%;
+    transition: all;
+    transition-duration: 1s;
+}
+
+.side-navbar__category {
+    display: flex;
+    flex-direction: column;
+    padding-top: 40px;
+    gap: 20px;
+    text-align: center;
+}
+
+.side-navbar__category li:hover {
+    font-weight: 700;
+}
+
+.close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 102;
+    cursor: pointer;
+    transition: all;
+    transition: 1s;
+}
+
+.close:hover {
+    color: red;
+    font-weight: bold;
+}
+
+/* Contact */
+.contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.5rem;
+    background-color: #f8fafc;
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.25);
+    text-align: center;
+    width: 50%;
+    margin: 60px auto;
+    padding: 20px;
+}
+
+.contact-container {
+    max-width: 75%;
+    width: 100%;
+}
+
+.contact-container h1 {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.contact-container p {
+    margin-bottom: 5px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    border: 1px solid #d1d5db;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    outline: none;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px black;
+}
+
+.contact-form button {
+    background-color: #2ae65c;
+    color: white;
+    padding: 0.5rem 1.5rem;
+    border-radius: 0.5rem;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.contact-form button:hover {
+    transition: 1s;
+    background-color: lightgray;
+    color: black;
+}
+
+/* Footer */
+.footer-title {
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.footer-maincontainer {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.footer1 {
+    background-color: #2ae65c;
+    color: black;
+    padding: 20px;
+}
+
+.footer h1 {
+    text-align: center;
+}
+
+.footer2 {
+    background-color: rgb(215, 212, 212);
+    color: black;
+    display: flex;
+    padding: 20px;
+    gap: 80px;
+
+}
+
+.left2 {
+    margin-left: 20px;
+}
+
+.left2 h1 {
+    margin-bottom: 20px;
+}
+
+.left1 h1 {
+    margin-bottom: 20px;
+}
+
+.left1 p {
+    margin-bottom: 10px;
+}
+
+.left2 p {
+    margin-bottom: 10px;
+}
+
+.left2 h1 {
+    margin-right: 50px;
+}
+
+.left1,
+.left2,
+.left3 h1 {
+    font-size: 20px;
+}
+
+.left1,
+.left2,
+.left3 p {
+    font-size: 16px;
+    padding-top: 20px;
+}
+
+.left3 h1 {
+    padding-top: 20px;
+}
+
+.icons {
+    display: flex;
+    width: 30px;
+    height: 30px;
+    gap: 5px;
+    margin-top: 10px;
+}
+
+.footerbottom {
+    display: flex;
+}
+
+.footerbottom h1 {
+    text-align: center;
+}
+
+@media (max-width:1024px) {
+    .nav_search-box {
+        display: none;
+    }
+
+    .nav_category {
+        display: none;
+    }
+
+    .nav-icon {
+        display: none;
+    }
+
+    .menuicon {
+        display: block;
+    }
+
+    /* Contact */
+
+    .contact {
+        width: 60%;
+        padding: 5px;
+    }
+
+    .contact-container h1 {
+        font-size: 20px;
+        font-weight: 400;
+        margin-bottom: 5px;
+    }
+
+    .contact-container p {
+        font-size: 10px;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        width: 100%;
+        padding: 3px;
+    }
+
+    .contact-form textarea {
+        height: 40px;
+    }
+
+    .contact-form button {
+        padding: 4px;
+        font-size: large;
+    }
+
+    /* Footer */
+    .footer-title {
+        font-size: 25px;
+    }
+
+    .footer1 {
+        padding: 15px;
+    }
+
+    .footer2 {
+        padding: 15px;
+        gap: 20px;
+
+    }
+
+    .left2 {
+        margin-left: 10px;
+    }
+
+    .left2 h1 {
+        margin-bottom: 10px;
+    }
+
+    .left1 h1 {
+        margin-bottom: 10px;
+    }
+
+    .left1 p {
+        margin-bottom: 10px;
+    }
+
+    .left2 p {
+        margin-bottom: 10px;
+    }
+
+    .left2 h1 {
+        margin-right: 10px;
+    }
+
+    .left1,
+    .left2,
+    .left3 h1 {
+        font-size: 20px;
+    }
+
+    .left1,
+    .left2,
+    .left3 p {
+        font-size: 16px;
+        padding-top: 20px;
+    }
+
+    .left3 h1 {
+        padding-top: 10px;
+    }
+
+    .icons {
+        width: 15px;
+        height: 15px;
+        gap: 5px;
+    }
+}
+
+@media (max-width:640px) {
+
+    /* Navbar */
+    .nav_search-box {
+        display: none;
+    }
+
+    .nav_category {
+        display: none;
+    }
+
+    .nav-icon {
+        display: none;
+    }
+
+    .menuicon {
+        display: block;
+    }
+
+    /* Contact */
+    .contact {
+        width: 80%;
+        padding: 5px;
+    }
+
+    .contact-container h1 {
+        font-size: 15px;
+        margin-bottom: 5px;
+    }
+
+    .contact-container p {
+        font-size: 8px;
+    }
+
+    .contact-form button {
+        padding: 4px;
+        font-size: small;
+    }
+
+    /* Footer */
+    .footer-title {
+        font-size: 20px;
+    }
+
+    .footer1 {
+        padding: 20px;
+    }
+
+    .footer2 {
+        padding: 15px;
+        gap: 20px;
+
+    }
+
+    .left2 {
+        margin-left: 10px;
+    }
+
+    .left2 h1 {
+        margin-bottom: 10px;
+    }
+
+    .left1 h1 {
+        margin-bottom: 10px;
+    }
+
+    .left1 p {
+        margin-bottom: 10px;
+    }
+
+    .left2 p {
+        margin-bottom: 10px;
+    }
+
+    .left2 h1 {
+        margin-right: 10px;
+    }
+
+    .left1,
+    .left2,
+    .left3 h1 {
+        font-size: 20px;
+    }
+
+    .left1,
+    .left2,
+    .left3 p {
+        font-size: 16px;
+        padding-top: 20px;
+    }
+
+    .left3 h1 {
+        padding-top: 10px;
+    }
+
+    .icons {
+        width: 15px;
+        height: 15px;
+        gap: 5px;
+    }
+}
