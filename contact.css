@@ -92,7 +92,7 @@
     position: fixed;
     top: 0;
     right: 0;
-    background-color: lightgrey;
+    background-color: #2ae65c;
     z-index: 101;
     right: -40%;
     transition: all;
@@ -105,10 +105,8 @@
     padding-top: 40px;
     gap: 20px;
     text-align: center;
-}
-
-.side-navbar__category li:hover {
     font-weight: 700;
+    color: white;
 }
 
 .close {
