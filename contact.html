@@ -1,159 +1,138 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Super Market</title>
-    <link rel="icon" href="./images/logo.jpg" />
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="contact.css" />
-  </head>
-  <body>
-    <!-- Navbar Section -->
-    <section class="navbar">
-      <h1 class="nav-title">Super Market</h1>
-      <div class="nav_search-box">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 20 20"
-          fill="currentColor"
-          class="size-5"
-        >
-          <path
-            fill-rule="evenodd"
-            d="M9 3.5a5.5 5.5 0 1 0 0 11 5.5 5.5 0 0 0 0-11ZM2 9a7 7 0 1 1 12.452 4.391l3.328 3.329a.75.75 0 1 1-1.06 1.06l-3.329-3.328A7 7 0 0 1 2 9Z"
-            clip-rule="evenodd"
-          />
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Super Market</title>
+  <link rel="icon" href="./images/logo.jpg" />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="contact.css" />
+</head>
+
+<body>
+  <!-- Navbar Section -->
+  <section class="navbar">
+    <h1 class="nav-title">Super Market</h1>
+    <div class="nav_search-box">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="size-5">
+        <path fill-rule="evenodd"
+          d="M9 3.5a5.5 5.5 0 1 0 0 11 5.5 5.5 0 0 0 0-11ZM2 9a7 7 0 1 1 12.452 4.391l3.328 3.329a.75.75 0 1 1-1.06 1.06l-3.329-3.328A7 7 0 0 1 2 9Z"
+          clip-rule="evenodd" />
+      </svg>
+      <input class="search-box" type="text" placeholder="Search for Products and More" />
+    </div>
+    <ul class="nav_category">
+      <li><a href="./index.html">Home</a></li>
+      <li><a href="./products.html">Products</a></li>
+      <li><a href="./contact.html">Contact</a></li>
+    </ul>
+    <div class="nav-icon">
+      <div class="flex items-center">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="size-7">
+          <path fill-rule="evenodd"
+            d="M18 10a8 8 0 1 1-16 0 8 8 0 0 1 16 0Zm-5.5-2.5a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0ZM10 12a5.99 5.99 0 0 0-4.793 2.39A6.483 6.483 0 0 0 10 16.5a6.483 6.483 0 0 0 4.793-2.11A5.99 5.99 0 0 0 10 12Z"
+            clip-rule="evenodd" />
         </svg>
-        <input
-          class="search-box"
-          type="text"
-          placeholder="Search for Products and More"
-        />
+        <button id="signupBtn">Signup</button>
       </div>
-      <ul class="nav_category">
-        <li><a href="./index.html">Home</a></li>
-        <li><a href="./products.html">Products</a></li>
-        <li><a href="./contact.html">Contact</a></li>
-      </ul>
-      <div class="nav-icon">
-        <div class="flex items-center">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 20 20"
-            fill="currentColor"
-            class="size-7"
-          >
-            <path
-              fill-rule="evenodd"
-              d="M18 10a8 8 0 1 1-16 0 8 8 0 0 1 16 0Zm-5.5-2.5a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0ZM10 12a5.99 5.99 0 0 0-4.793 2.39A6.483 6.483 0 0 0 10 16.5a6.483 6.483 0 0 0 4.793-2.11A5.99 5.99 0 0 0 10 12Z"
-              clip-rule="evenodd"
-            />
-          </svg>
-          <button id="signupBtn">Signup</button>
-        </div>
-      </div>
-      <div id="menuicon" class="menuicon">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke-width="1.5"
-          stroke="currentColor"
-          class="size-6 cursor-pointer"
-        >
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
-          />
-        </svg>
-      </div>
-    </section>
-    <!-- Side Navbar -->
-    <section id="sidenavbar" class="sidenavbar">
-      <div class="close">
-        <p id="closenavbar">X</p>
-      </div>
-      <ul class="side-navbar__category">
-        <li><a href="./index.html">Home</a></li>
-        <li>
-          <a href="./products.html">Products</a>
-        </li>
-        <li>
-          <a href="./contact.html">Contact</a>
-        </li>
-      </ul>
-    </section>
-    <!-- contact -->
-    <section class="contact">
-      <div class="contact-container">
-        <h1>Contact Us</h1>
-        <p>Have questions about our Products? We'd love to hear from you.</p>
-        <form class="contact-form">
-          <input type="text" placeholder="Full Name" />
-          <input type="email" placeholder="Email Address" />
-          <input type="number" placeholder="Phone number" />
-          <textarea placeholder="Your Message" rows="4"></textarea>
-          <button>Submit</button>
-        </form>
-      </div>
-    </section>
-    <!-- Footer section -->
-    <section class="footer-maincontainer">
-      <div class="footer1">
-        <h1 class="footer-title">Super Market</h1>
-        <p>
-          Did you ever imagine that the freshest of fruits and vegetables,
-          top-quality pulses and food grains, dairy products, and hundreds of
-          branded items could be handpicked and delivered to your home, all at
-          the click of a button? In today's fast-paced world, bigbasket.com,
-          India's pioneering online grocery store, continues to bring a
-          staggering array of over 40,000 products from more than 1,000 brands
-          to the doorsteps of over 10 million satisfied customers. From
-          essential household cleaning products to the latest beauty and makeup
-          trends, bigbasket remains your one-stop shop for daily needs.
-        </p>
+    </div>
+    <div id="menuicon" class="menuicon">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+        class="size-6 cursor-pointer">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+      </svg>
+    </div>
+  </section>
+  <!-- Side Navbar -->
+  <section id="sidenavbar" class="sidenavbar">
+    <div class="close">
+      <p id="closenavbar">X</p>
+    </div>
+    <ul class="side-navbar__category">
+      <li><a href="./index.html">Home</a></li>
+      <li>
+        <a href="./products.html">Products</a>
+      </li>
+      <li>
+        <a href="./contact.html">Contact</a>
+      </li>
+    </ul>
+  </section>
+  <!-- contact -->
+  <section class="contact">
+    <div class="contact-container">
+      <h1>Contact Us</h1>
+      <p>Have questions about our Products? We'd love to hear from you.</p>
+      <form class="contact-form" id="contactForm">
+        <input type="text" id="name" placeholder="Full Name" />
+
+        <input type="email" id="email" placeholder="Email Address" />
+
+        <input type="tel" id="phone" placeholder="Phone number" />
+
+        <textarea id="message" placeholder="Your Message" rows="4"></textarea>
+
+        <button type="submit">Submit</button>
+
+        <p id="successMsg"></p>
+      </form>
+    </div>
+  </section>
+  <!-- Footer section -->
+  <section class="footer-maincontainer">
+    <div class="footer1">
+      <h1 class="footer-title">Super Market</h1>
+      <p>
+        Did you ever imagine that the freshest of fruits and vegetables,
+        top-quality pulses and food grains, dairy products, and hundreds of
+        branded items could be handpicked and delivered to your home, all at
+        the click of a button? In today's fast-paced world, bigbasket.com,
+        India's pioneering online grocery store, continues to bring a
+        staggering array of over 40,000 products from more than 1,000 brands
+        to the doorsteps of over 10 million satisfied customers. From
+        essential household cleaning products to the latest beauty and makeup
+        trends, bigbasket remains your one-stop shop for daily needs.
+      </p>
+    </div>
+
+    <div class="footer2">
+      <div class="left1">
+        <h1>Super Market</h1>
+        <p>About Us</p>
+        <p>In New</p>
+        <p>Green Super Market</p>
+        <p>Privacy Policy</p>
+        <p>Affiliate</p>
+        <p>Terms and conditions</p>
+        <p>Super Market Daily</p>
       </div>
 
-      <div class="footer2">
-        <div class="left1">
-          <h1>Super Market</h1>
-          <p>About Us</p>
-          <p>In New</p>
-          <p>Green Super Market</p>
-          <p>Privacy Policy</p>
-          <p>Affiliate</p>
-          <p>Terms and conditions</p>
-          <p>Super Market Daily</p>
-        </div>
+      <div class="left2">
+        <h1>Help</h1>
+        <p>FAQs</p>
+        <p>Contact Us</p>
+        <p>Super Market Wallet FAQs</p>
+        <p>Super Market Wallet T&Cs</p>
+        <p>Vendor Connect</p>
+      </div>
 
-        <div class="left2">
-          <h1>Help</h1>
-          <p>FAQs</p>
-          <p>Contact Us</p>
-          <p>Super Market Wallet FAQs</p>
-          <p>Super Market Wallet T&Cs</p>
-          <p>Vendor Connect</p>
-        </div>
+      <div class="left3">
+        <h1>Super Market</h1>
 
-        <div class="left3">
-          <h1>Super Market</h1>
-
-          <div class="icons">
-            <img src="./images/instagram (1).png" />
-            <img src="./images/facebook (1).png" />
-            <img src="./images/twitter (1).png" />
-          </div>
+        <div class="icons">
+          <img src="./images/instagram (1).png" />
+          <img src="./images/facebook (1).png" />
+          <img src="./images/twitter (1).png" />
         </div>
       </div>
-    </section>
-    <script src="contact.js"></script>
-  </body>
+    </div>
+  </section>
+  <script src="contact.js"></script>
+</body>
+
 </html>
