@@ -37,22 +37,6 @@ document.addEventListener("DOMContentLoaded", function () {
     popup.style.display = "none";
   });
 
-  // CLOSE WHEN CLICK OUTSIDE
-  popup.addEventListener("click", function (e) {
-    if (e.target === popup) {
-      popup.style.display = "none";
-    }
-  });
-
-  // SHOW / HIDE PASSWORD
-  togglePassword.addEventListener("click", function () {
-    if (password.type === "password") {
-      password.type = "text";
-    } else {
-      password.type = "password";
-    }
-  });
-
   // LOGIN CHECK
   loginBtn.addEventListener("click", function () {
     userError.textContent = "";

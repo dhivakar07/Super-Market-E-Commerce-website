@@ -217,7 +217,36 @@
     margin: 10px;
 }
 
-.product_product-dairy-milk-section{
+.product_dairy-section {
+
+    margin: 10px;
+}
+
+.product_bakery-section {
+
+    margin: 10px;
+}
+
+.product_beverages-section {
+
+    margin: 10px;
+}
+
+.product_sweets-section {
+
+    margin: 10px;
+}
+
+.product_packagedfood-section {
+
+    margin: 10px;
+}
+
+.product_personal-section,
+.product_snacks-section,
+.product_frozen-section,
+.product_rice-section,
+.product_household-section {
 
     margin: 10px;
 }
@@ -236,6 +265,8 @@
 
 .product {
     text-align: start;
+    cursor: pointer;
+    border-radius: 8px;
 }
 
 .product-img {

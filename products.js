@@ -21,16 +21,6 @@ document.addEventListener("DOMContentLoaded", () => {
     category.addEventListener("click", () => {
       const categoryName = category.textContent.trim().toLowerCase();
       showCategory(categoryName);
-
-      //When click the category it will change bg-color
-      category.addEventListener("click", function (event) {
-        categories.forEach(function (catelist) {
-          catelist.style.backgroundColor = "";
-          catelist.style.color = "";
-        });
-        event.target.style.backgroundColor = "#329537";
-        event.target.style.color = "white";
-      });
     });
   });
 });
@@ -93,22 +83,19 @@ closenavbar.addEventListener("click", () => {
   sidenavbar.style.right = "-40%";
 });
 
-
 var search = document.getElementById("search");
 var products = document.querySelectorAll(".product");
 
 search.addEventListener("keyup", function () {
-    
-    var enteredValue = search.value.toUpperCase();
+  var enteredValue = search.value.toUpperCase();
 
-    for (var i = 0; i < products.length; i++) {
+  for (var i = 0; i < products.length; i++) {
     var productName = products[i].querySelector(".product-name").textContent;
 
     if (productName.toUpperCase().indexOf(enteredValue) < 0) {
-        products[i].style.display = "none";
+      products[i].style.display = "none";
     } else {
-        products[i].style.display = "block";
+      products[i].style.display = "block";
     }
-}
-
-    });
+  }
+});
