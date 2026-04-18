@@ -1,4 +1,5 @@
 // Dynamic rotating headline
+// bannner section start
 const headlines = [
   "Healthy & Fresh Groceries",
   "Delivered Right to Your Door",
@@ -12,7 +13,7 @@ setInterval(() => {
   hIndex = (hIndex + 1) % headlines.length;
   headlineEl.textContent = headlines[hIndex];
 }, 4000);
-
+// banner section end
 document.addEventListener("DOMContentLoaded", function () {
   const signupBtn = document.getElementById("signupBtn");
   const popup = document.getElementById("loginPopup");
