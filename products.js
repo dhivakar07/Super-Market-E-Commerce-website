@@ -92,3 +92,23 @@ menuicon.addEventListener("click", () => {
 closenavbar.addEventListener("click", () => {
   sidenavbar.style.right = "-40%";
 });
+
+
+var search = document.getElementById("search");
+var products = document.querySelectorAll(".product");
+
+search.addEventListener("keyup", function () {
+    
+    var enteredValue = search.value.toUpperCase();
+
+    for (var i = 0; i < products.length; i++) {
+    var productName = products[i].querySelector(".product-name").textContent;
+
+    if (productName.toUpperCase().indexOf(enteredValue) < 0) {
+        products[i].style.display = "none";
+    } else {
+        products[i].style.display = "block";
+    }
+}
+
+    });
